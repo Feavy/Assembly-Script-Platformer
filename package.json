@@ -1,0 +1,17 @@
+{
+    "name": "wasm_test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm --runtime none --optimize --optimizeLevel 3 --shrinkLevel 2",
+        "asbuild": "npm run asbuild:optimized"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "assemblyscript": "^0.9.4"
+    }
+}
